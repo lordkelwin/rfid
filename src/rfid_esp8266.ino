@@ -67,7 +67,7 @@ void loop() {
   roomTime dataRF = readRFID();
   Serial.println(dataRF.room);
   Serial.println(dataRF.timeLength);
-/*
+
   if (dataRF.room == "108") {
     digitalWrite(D3, 0);
     i = 0;
@@ -78,7 +78,7 @@ void loop() {
     }
   }
   Serial.println(i);
-  */
+  
 }
 
 roomTime readRFID() {
