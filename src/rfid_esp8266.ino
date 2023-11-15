@@ -52,10 +52,10 @@ void setupWifi() {
 void setup() {
   Serial.begin(115200);
   pinMode(D3, 1);
-  //setupWifi();
+  setupWifi();
   
- // AsyncElegantOTA.begin(&server);
-  //server.begin();
+  AsyncElegantOTA.begin(&server);
+  server.begin();
 
   SPI.begin();
   mfrc522.PCD_Init();
