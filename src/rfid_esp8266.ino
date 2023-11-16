@@ -22,11 +22,11 @@ struct roomTime {
 };
 
 void setupWifi() {
-  byte buffer[30];
-  byte block;
-  char name_arr[20];
-  char pass_arr[20];
-  byte len;
+  //byte buffer[30];
+  //byte block;
+  //char name_arr[20];
+  //char pass_arr[20];
+  //byte len;
 
   Serial.println(ssid);
   Serial.println(pass);
@@ -63,7 +63,7 @@ void setup() {
 }
 
 void loop() {
-  AsyncElegantOTA.loop();
+  //AsyncElegantOTA.loop();
   roomTime dataRF = readRFID();
   Serial.println(dataRF.room);
   Serial.println(dataRF.timeLength);
